@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
-const Layout = ({ children }: any) => {
-  return <div>Layout</div>;
+type props = {
+  children: ReactNode | void;
+};
+
+const Layout = ({ children }: props) => {
+  return <>{children}</>;
 };
 
 export default Layout;
